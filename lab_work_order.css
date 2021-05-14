@@ -1,16 +1,30 @@
 .food_type{	
-    overflow-x: scroll;
 	background-color:#E8E5E5; 
-	height: 10%;
+	height: auto;
+	width: 100%;
 	margin-left: -10px;
 	margin-top: -7px;
+	margin: auto;
+	top: 0;
+	left:0;
+	position : fixed;
+  	overflow: scroll;
+  	z-index: 1;
+
 }
 .food_type ul{
-	top: 0px;
-	margin: 0px;
+	top: 0;
+    margin-top: 10px;
+    margin-bottom: 0px;
 	padding: 3px;
 	white-space: nowrap;
-
+	display: block;
+    overflow-x: auto;
+}
+::-webkit-scrollbar {
+	height: 6px;
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 .food_type li{
 	display: inline-block;
@@ -54,15 +68,19 @@
 	margin-top: 0.25%;
 }
 .search_box_div{
+	clear: left;
+	margin-top: 75px;
 }
 .page_text{
 	text-align: center;	
+	clear: left;
 }
 .search_box_div img{
 	width: 35px;
 	height: 35px;
 	float: left;
 	margin-top: 0.25%;
+	z-index: 0;
 	position: absolute;
 }
 .search_box_div img:hover{
